@@ -3,13 +3,13 @@
 </h1>
 
 <h3 align="center">
-  Desafio 5: Primeiro projeto com ReactJS
+  Challenge 5: First project with ReactJS
 </h3>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/onlyreynaldo/fifth-challenge-gostack?color=%2304D361">
 
-  <img alt="License" src="https://img.shields.io/github/license/onlyreynaldo/fifth-challenge-gostack?style=flat-square">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 
   <img alt="Last commit" src="https://img.shields.io/github/last-commit/onlyreynaldo/fifth-challenge-gostack?style=flat-square" >
 
@@ -18,27 +18,27 @@
   </a>
 </p>
 
-## :rocket: Funcionalidades
+## :rocket: Features
 
-### 1. Captando erros
+### 1. Catching errors
 
-Foi adicionado um `try/catch` por volta do código presente na função `handleSubmit` presente no componente `Main` se caso um repositório não seja encontrado na API do Github por volta do input em que o usuário digitou o nome do repositório terá uma borda vermelha.
+A `try/catch` has been added around the code present in the `handleSubmit` function in the `Main` component if a repository is not found in the Github API around the input where the user entered the repository name will have a red border.
 
-### 2. Repositório duplicado
+### 2. Duplicated repository
 
-Antes de fazer a chamada à API na função `handleSubmit` tem uma verificação para ver se o repositório não está duplicado, ou seja, se ele ainda não existe no estado de `repositories`.
+Before calling the API in the `handleSubmit` function, you have a check to see if the repository is not duplicated, that is, if it does not already exist in the `repositories` state.
 
-Caso exista, manda um erro, e com isso o código cairá no `catch` do `try/catch` criado na funcionalidade anterior.
+If it does exist, it sends an error, and with that the code will fall into the `catch` of the `try/catch` created in the previous functionality.
 
 ```js
-throw new Error('Repositório duplicado');
+throw new Error('Duplicated repository');
 ```
 
-### 3. Filtro de estado
+### 3. Status filter
 
-Foi adicionado um filtro de estado na listagem de Issues, no detalhe do repositório. O estado representa se a issue está em aberto, fechada ou uma opção para exibir todas.
+A status filter has been added to the Issues listing in the repository detail. The status represents whether the issue is open, closed or an option to display all.
 
-Exemplos de requisição:
+Examples of requests:
 
 ```
 https://api.github.com/repos/rocketseat/unform/issues?state=all
@@ -46,9 +46,9 @@ https://api.github.com/repos/rocketseat/unform/issues?state=open
 https://api.github.com/repos/rocketseat/unform/issues?state=closed
 ```
 
-### 4. Paginação
+### 4. Pagination
 
-Foi adicionado paginação nas issues listadas no detalhe do repositório. A API do Github lista no máximo 30 issues por página.
+Paging has been added to the issues listed in the repository detail. The Github API lists a maximum of 30 issues per page.
 
 ```
 https://api.github.com/repos/rocketseat/unform/issues?page=2

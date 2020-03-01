@@ -1,0 +1,8 @@
+{
+  "name": "fifth-challenge-gostack",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:onlyreynaldo/fifth-challenge-gostack.git",
+  "author": "Reynaldo Layme <layme.reynaldo@icloud.com>",
+  "license": "MIT"
+}
